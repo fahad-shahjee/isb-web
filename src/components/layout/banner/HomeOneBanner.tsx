@@ -6,7 +6,8 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import banneronethumb from "public/images/banner/banner-one-thumb.png";
 import star from "public/images/star.png";
 import videoframe from "public/images/video-frame.png";
-import YoutubeEmbed from "@/components/youtube/YoutubeEmbed";
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 const HomeOneBanner = () => {
@@ -53,28 +54,16 @@ const HomeOneBanner = () => {
             <div className="col-12">
               <div className="banner__content">
                 <h1 className="text-uppercase text-start fw-9 mb-0 title-anim">
-                  We are
-                  <span className="text-stroke">creative</span>
+                  Creativity
+                  <span className="text-stroke">in our</span>
                   <span className="interval">
-                    <i className="icon-arrow-top-right"></i> digital agency
+                    <i className="icon-arrow-top-right"></i> Bloodline
                   </span>
                 </h1>
                 <div className="banner__content-inner">
                   <p>
-                    We are a full-service website design, development and
-                    digital marketing company specializing in SEO, content
-                    marketing that grows brands.
+                    Fueling Success with Creative Brilliance. ISBTechs: Where Innovation Meets Imagination.
                   </p>
-                  <div className="cta section__content-cta">
-                    <div className="single">
-                      <h5 className="fw-7">12+</h5>
-                      <p className="fw-5">years of experience</p>
-                    </div>
-                    <div className="single">
-                      <h5 className="fw-7">25k</h5>
-                      <p className="fw-5">completed projects</p>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -87,27 +76,24 @@ const HomeOneBanner = () => {
         />
         <Image src={star} alt="Image" className="star" />
         <div className="banner-left-text banner-social-text d-none d-md-flex">
-          <Link href="mailto:info@xpovio.com">mail : info@xpovio.com</Link>
-          <Link href="tel:99-2158-003-6980">Call : +99 2158 003 6980</Link>
+          <Link href="mailto:info@isbtechs.com">mail : info@isbtechs.com</Link>
+          <Link href="tel:7869494620">Call : (746) 949-4620</Link>
         </div>
         <div className="banner-right-text banner-social-text d-none d-md-flex">
-          <Link href="https://www.instagram.com/" target="_blank">
+          <Link href="https://www.instagram.com/isbtechs/?igsh=MXRsd3VoY2FteWJtdQ%3D%3D" target="_blank">
             instagram
           </Link>
-          <Link href="https://www.pinterest.com/" target="_blank">
-            Linkedin
-          </Link>
-          <Link href="https://www.facebook.com/" target="_blank">
+          <Link href="https://www.facebook.com/ISBtechsolutions/" target="_blank">
             facebook
           </Link>
         </div>
-        <button
+        {/* <button
           className="video-frame video-btn"
-          onClick={() => setVideoActive(true)}
+          onClick={() => router.push('/contact')}
         >
           <Image src={videoframe} alt="Image" priority />
-          <i className="fa-sharp fa-solid fa-play"></i>
-        </button>
+          <i className="fa-solid fa-arrow-up-right"></i>
+        </button> */}
         <div className="lines d-none d-lg-flex">
           <div className="line"></div>
           <div className="line"></div>
@@ -116,26 +102,6 @@ const HomeOneBanner = () => {
           <div className="line"></div>
         </div>
       </section>
-      <div
-        className={(videoActive ? " video-zoom-in" : " ") + " video-backdrop"}
-        onClick={() => setVideoActive(false)}
-      >
-        <div className="video-inner">
-          <div
-            className="video-container"
-            onClick={(e: any) => e.stopPropagation()}
-          >
-            {videoActive && <YoutubeEmbed embedId="fSv6UgCkuTU" />}
-            <button
-              aria-label="close video popup"
-              className="close-video-popup"
-              onClick={() => setVideoActive(false)}
-            >
-              <i className="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-        </div>
-      </div>
     </>
   );
 };

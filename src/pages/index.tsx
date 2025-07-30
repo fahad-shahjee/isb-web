@@ -11,7 +11,7 @@ import NextPage from "@/components/containers/home/NextPage";
 
 const Home = () => {
   return (
-    <Layout header={1} footer={1} video={true}>
+    <Layout header={2} footer={2} video={true}>
       <HomeOneBanner />
       <Agency />
       <PortfolioText />
