@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import banneronethumb from "public/images/banner/banner-one-thumb.png";
 import star from "public/images/star.png";
-import videoframe from "public/images/video-frame.png";
 
 
 
