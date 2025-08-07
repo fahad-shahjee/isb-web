@@ -44,9 +44,7 @@ const HomeFourBanner = () => {
             <div className="banner-four__content">
               <div className="intro">
                 <p>
-                  I&apos;m a brand led designer that combines creative with
-                  strategy to create compelling brand identity and digital
-                  design experiences.
+                  Fueling Success with Creative Brilliance. ISBTechs: Where Innovation Meets Imagination.
                 </p>
                 <div className="arrow-wrapper">
                   <span className="arrow"></span>
@@ -54,12 +52,12 @@ const HomeFourBanner = () => {
               </div>
               <div className="banner-four__title">
                 <h1>
-                  i am a digital designer
+                  Creativity <br /> in our 
                   <Link className="frame g-ban-frame" href="about-us">
                     <Image src={videoframethree} alt="Image" />
                     <i className="fa-solid fa-arrow-up-right"></i>
                   </Link>
-                  & dreamer
+                  Bloodline
                 </h1>
               </div>
             </div>
