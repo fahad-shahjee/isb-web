@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import blogthumb from "public/images/offer/blog-thumb.png";
-import two from "public/images/offer/two.png";
-import three from "public/images/offer/three.png";
+import logo from "public/images/offer/logo.png";
+import webdev from "public/images/offer/web-design.png";
+import ecomsol from "public/images/offer/web-design.png";
+import mobile from "public/images/offer/mobileapp.png";
+import animation from "public/images/offer/animation.png";
+import bbranding from "public/images/offer/branding.png";
+import digimark from "public/images/offer/digimarketing.png";
 import star from "public/images/offer/star.png";
 
 const HomeOffer = () => {
@@ -37,19 +41,16 @@ const HomeOffer = () => {
           <div className="col-12 col-lg-5">
             <div className="offer__content section__content">
               <span className="sub-title">
-                WHAT WE OFFER
+                OUR SERVICES
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                Giving Your Business Some Great Ideas
+                Services we can help you with
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  At ISBTechs, we blend technology, design, and strategy to deliver smart, scalable digital solutions. Our forward-thinking approach helps businesses adapt, 
+                  grow, and thrive in a competitive digital world with performance-driven results.
                 </p>
               </div>
               <div className="section__content-cta">
@@ -66,14 +67,14 @@ const HomeOffer = () => {
                   01
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
-                <h2>
+                <h3>
                   <Link href="service-single">
-                    uI / uX experience
+                    Logo design
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
-                </h2>
+                </h3>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={blogthumb} alt="Image" />
+                  <Image src={logo} alt="Image" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -81,14 +82,14 @@ const HomeOffer = () => {
                   02
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
-                <h2>
+                <h3>
                   <Link href="service-single">
-                    web development
+                    Web Development
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
-                </h2>
+                </h3>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={two} alt="Image" />
+                  <Image src={webdev} alt="Image" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -96,14 +97,14 @@ const HomeOffer = () => {
                   03
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
-                <h2>
+                <h3>
                   <Link href="service-single">
-                    digital marketing
+                    Ecommerce Solutions
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
-                </h2>
+                </h3>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={three} alt="Image" />
+                  <Image src={ecomsol} alt="Image" />
                 </div>
               </div>
               <div className="offer__cta-single fade-top">
@@ -111,14 +112,59 @@ const HomeOffer = () => {
                   04
                   <i className="fa-solid fa-arrow-right"></i>
                 </span>
-                <h2>
+                <h3>
                   <Link href="service-single">
-                    product design
+                    Mobile Application
                     <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
                   </Link>
-                </h2>
+                </h3>
                 <div className="offer-thumb-hover d-none d-md-block">
-                  <Image src={blogthumb} alt="Image" />
+                  <Image src={mobile} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  05
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h3>
+                  <Link href="service-single">
+                    Animation
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h3>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={animation} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  06
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h3>
+                  <Link href="service-single">
+                    Business Branding
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h3>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={bbranding} alt="Image" />
+                </div>
+              </div>
+              <div className="offer__cta-single fade-top">
+                <span className="sub-title">
+                  07
+                  <i className="fa-solid fa-arrow-right"></i>
+                </span>
+                <h3>
+                  <Link href="service-single">
+                    Digital Marketing
+                    <i className="fa-sharp fa-solid fa-arrow-up-right"></i>
+                  </Link>
+                </h3>
+                <div className="offer-thumb-hover d-none d-md-block">
+                  <Image src={digimark} alt="Image" />
                 </div>
               </div>
             </div>

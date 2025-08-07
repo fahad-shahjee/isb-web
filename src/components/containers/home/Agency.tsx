@@ -100,57 +100,28 @@ const Agency = () => {
                 <i className="fa-solid fa-arrow-right"></i>
               </span>
               <h2 className="title title-anim">
-                We are digital creative agency in London
+                Your trusted partner for business
               </h2>
               <div className="paragraph">
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  Welcome to ISBTechs, a distinguished technology company with a remarkable nine-year legacy. Headquartered in Aurora, IL, we have expanded our 
+                  reach with strategic offices in Bellevue, WA, Toronto, Canada, and Dubai, UAE, establishing a global presence. With a highly skilled workforce 
+                  comprising over 250 employees, we are committed to delivering exceptional services on a global scale.
                 </p>
               </div>
-              <div className="skill-wrap">
-                <div className="skill-bar-single d-none">
-                  <div className="skill-bar-title">
-                    <p className="primary-text">Website design</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p className="primary-text">Website design</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="75%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="skill-bar-single">
-                  <div className="skill-bar-title">
-                    <p className="primary-text">Digital Marketing</p>
-                  </div>
-                  <div className="skill-bar-wrapper" data-percent="90%">
-                    <div className="skill-bar">
-                      <div className="skill-bar-percent">
-                        <span className="percent-value"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <h6 className="title title-anim" style={{paddingTop: '20px'}}>
+                Why choose Us
+              </h6>
+              <h4 className="title title-anim" style={{marginTop: '-20px'}}>
+                Highly experienced pepole with us
+              </h4>
+              <p>
+                  At ISBTechs, we are steadfast in our commitment to delivering exceptional quality and unparalleled results. Our global presence, coupled with a 
+                  highly talented team of experts, enables us to harness technology and creativity to their full potential, fueling your business’s growth. Collaborate 
+                  with us today and unlock the power of your digital presence.
+                </p>
               <div className="section__content-cta">
-                <Link href="about-us" className="btn btn--primary">
+                <Link href="about-us" className="btn btn--primary" style={{marginTop: '-30px'}}>
                   Know More
                 </Link>
               </div>
