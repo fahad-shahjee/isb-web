@@ -4,9 +4,10 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-import sthumb from "public/images/testimonial/s-thumb.png";
-import sthumbtwo from "public/images/testimonial/s-thumb-two.png";
-import sthumbthree from "public/images/testimonial/s-thumb-three.png";
+import vaden from "public/images/testimonial/s-thumb.png";
+import davidr from "public/images/testimonial/s-thumb-two.png";
+import saraht from "public/images/testimonial/s-thumb-three.png";
+import jonathan from "public/images/testimonial/s-thumb-four.png";
 
 const HomeTestimonial = () => {
   const [nextSlideIndex, setNextSlideIndex] = useState<number>(1);
@@ -136,7 +137,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumb} alt="Image" />
+                          <Image src={vaden} alt="Image" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -159,16 +160,16 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              We hired ISB Techs for a website revamp, and while the
+                              end product was decent, the process had some hiccups.
+                              The design was good, but there were issues with functionality
+                              that took longer than expected to resolve. Communication could
+                              have been better, as we often had to follow up for updates. The
+                              site works well now, but it was a bumpy road to get there.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Vaden Milton</h5>
                           </div>
                         </div>
                       </div>
@@ -180,7 +181,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbtwo} alt="Image" />
+                          <Image src={davidr} alt="Image" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -203,16 +204,16 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              I was skeptical at first, but ISbTechs exceeded my
+                              expectations. Their responsive, creative team delivered
+                              a professional, flawless website for my fitness gear brand.
+                              Within weeks, traffic and conversions increased, making it
+                              our main sales channel. Highly recommended—they’re the real
+                              deal.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>David R.</h5>
                           </div>
                         </div>
                       </div>
@@ -224,7 +225,7 @@ const HomeTestimonial = () => {
                     <div className="row gaper align-items-center">
                       <div className="col-12 col-lg-4 col-xxl-4">
                         <div className="thumb">
-                          <Image src={sthumbthree} alt="Image" />
+                          <Image src={saraht} alt="Image" />
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="44"
@@ -247,16 +248,61 @@ const HomeTestimonial = () => {
                           </div>
                           <div className="content">
                             <h4>
-                              posuere luctus orci. Donec vitae mattis quam,
-                              vitae tempor arcu. Aenean non odio porttitor,
-                              convallis erat sit amet, facilisis velit. Nulla
-                              ornare convallis malesuada. Phasellus molestie,
-                              ipsum ac fringilla.
+                              Partnering with ISbTechs was one of my best business
+                              decisions. They built a stunning, fast, and user-friendly
+                              e-commerce site that perfectly reflected my brand. In the
+                              first month, sales jumped 212%—from $8K to over $25K.
+                              Customers loved the design and ease of use. ISbTechs
+                              didn’t just build a website—they helped grow my business.
                             </h4>
                           </div>
                           <div className="content-cta">
-                            <h5>Daniel Smith</h5>
-                            <p>Senior engineer</p>
+                            <h5>Sarah T.</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="testimonial-s__slider-single">
+                    <div className="row gaper align-items-center">
+                      <div className="col-12 col-lg-4 col-xxl-4">
+                        <div className="thumb">
+                          <Image src={jonathan} alt="Image" />
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="44"
+                            height="322"
+                            viewBox="0 0 44 322"
+                            fill="none"
+                            className="d-none d-lg-block"
+                          >
+                            <path
+                              d="M43 -0.000976562V151.999L2 192.999H43V321.999"
+                              stroke="#414141"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div className="col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1">
+                        <div className="testimonial-s__content">
+                          <div className="quote">
+                            <i className="fa-solid fa-quote-right"></i>
+                          </div>
+                          <div className="content">
+                            <h4>
+                              ISB Techs developed a custom app for our business, and the
+                              experience was fantastic. The team was highly skilled,
+                              delivering a product that exceeded our expectations. The
+                              app is intuitive, fast, and has received positive feedback
+                              from our users. Their attention to detail and willingness
+                              to go the extra mile made all the difference. Highly
+                              recommend their services!
+                            </h4>
+                          </div>
+                          <div className="content-cta">
+                            <h5>Jonathan Sinkleris</h5>
                           </div>
                         </div>
                       </div>
@@ -287,10 +333,12 @@ const HomeTestimonial = () => {
           className="other-section-image"
           src={
             nextSlideIndex === 0
-              ? sthumb
+              ? vaden
               : nextSlideIndex === 1
-              ? sthumbtwo
-              : sthumbthree
+                ? davidr
+                : nextSlideIndex === 2
+                  ? saraht
+                  : jonathan
           }
           alt="Next Slide Image"
         />

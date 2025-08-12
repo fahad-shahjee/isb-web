@@ -9,6 +9,12 @@ import three from "public/images/sponsor/three.png";
 import four from "public/images/sponsor/four.png";
 import five from "public/images/sponsor/five.png";
 import six from "public/images/sponsor/six.png";
+import seven from "public/images/sponsor/seven.png";
+import eight from "public/images/sponsor/eight.png";
+import nine from "public/images/sponsor/nine.png";
+import ten from "public/images/sponsor/ten.png";
+import eleven from "public/images/sponsor/eleven.png";
+import twelve from "public/images/sponsor/twelve.png";
 
 const HomeSponsor = () => {
   return (
@@ -80,62 +86,32 @@ const HomeSponsor = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={one} alt="Image" />
+                    <Image src={seven} alt="Image" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={two} alt="Image" />
+                    <Image src={eight} alt="Image" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={one} alt="Image" />
+                    <Image src={nine} alt="Image" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={two} alt="Image" />
+                    <Image src={ten} alt="Image" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={three} alt="Image" />
+                    <Image src={eleven} alt="Image" />
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="sponsor__slider-item">
-                    <Image src={four} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={five} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={six} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={three} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={four} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={five} alt="Image" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="sponsor__slider-item">
-                    <Image src={six} alt="Image" />
+                    <Image src={twelve} alt="Image" />
                   </div>
                 </SwiperSlide>
               </Swiper>
