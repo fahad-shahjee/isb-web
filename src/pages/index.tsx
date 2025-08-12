@@ -7,6 +7,7 @@ import HomeOffer from "@/components/containers/home/HomeOffer";
 import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
 import HomeBlog from "@/components/containers/home/HomeBlog";
 import HomeSponsor from "@/components/containers/home/HomeSponsor";
+import Portfolio from "@/components/containers/home/Portfolio"
 import NextPage from "@/components/containers/home/NextPage";
 
 const Home = () => {
@@ -16,7 +17,7 @@ const Home = () => {
       <Agency />
       <HomeOffer />
       <HomeTestimonial />
-      <PortfolioText />
+      <Portfolio />
       <HomeBlog />
       <HomeSponsor />
       {/* <NextPage /> */}
