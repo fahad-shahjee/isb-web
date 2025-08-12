@@ -15,8 +15,8 @@ const Home = () => {
       <HomeFourBanner />
       <Agency />
       <HomeOffer />
-      <PortfolioText />
       <HomeTestimonial />
+      <PortfolioText />
       <HomeBlog />
       <HomeSponsor />
       {/* <NextPage /> */}
