@@ -8,17 +8,19 @@ import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
 import HomeBlog from "@/components/containers/home/HomeBlog";
 import HomeSponsor from "@/components/containers/home/HomeSponsor";
 import Portfolio from "@/components/containers/home/Portfolio"
+import Cta from "@/components/containers/home/Cta"
 import NextPage from "@/components/containers/home/NextPage";
 
 const Home = () => {
   return (
     <Layout header={2} footer={2} video={false}>
       <HomeFourBanner />
+      <Cta />
       <Agency />
       <HomeOffer />
+      <Cta />
       <HomeTestimonial />
       <Portfolio />
-      <HomeBlog />
       <HomeSponsor />
       {/* <NextPage /> */}
     </Layout>
