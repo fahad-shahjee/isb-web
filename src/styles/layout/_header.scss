@@ -28,14 +28,18 @@
   }
 
   .navbar__item {
-    button,a
-    a {
-      padding: 41px 20px;
-      text-transform: uppercase;
-      font-weight: 500;
-      width: 100%;
+  button,
+  a,
+  .navbar__dropdown-label {
+    padding: 41px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    width: 100%;
     }
   }
+
 
   .navbar__item--has-children {
     position: relative;
@@ -79,8 +83,8 @@
     position: absolute;
     top: 100%;
     left: 0px;
-    min-width: 220px;
-    max-width: 260px;
+    min-width: 290px;
+    max-width: 315px;
     background-color: var(--white);
     opacity: 0;
     visibility: hidden;
