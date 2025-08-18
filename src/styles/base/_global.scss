@@ -530,6 +530,23 @@ i {
     font-size: 24px;
   }
 }
+.video-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* icon on top, text below */
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.video-btn i {
+  font-size: 28px; /* phone icon size */
+  margin-bottom: 8px;
+}
+
 
 /* ==== 
    --------- (2.03) global styles end ---------
