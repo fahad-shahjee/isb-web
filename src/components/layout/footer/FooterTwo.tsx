@@ -26,7 +26,7 @@ const FooterTwo = () => {
         },
       });
 
-      const folksGradient = chroma.scale(["#ff7425", "#ffffff"]);
+      const folksGradient = chroma.scale(["#146CA9", "#ffffff"]);
 
       animatedChars.forEach((charElement, index) => {
         const delay = index * 0.04;
@@ -152,21 +152,9 @@ const FooterTwo = () => {
                   <i className="fa-brands fa-facebook-f"></i>
                   <span>Facebook</span>
                 </Link>
-                <Link href="https://www.twitter.com/" target="_blank">
-                  <i className="fa-brands fa-twitter"></i>
-                  <span>Twitter</span>
-                </Link>
-                <Link href="https://www.pinterest.com/" target="_blank">
-                  <i className="fa-brands fa-linkedin-in"></i>
-                  <span>Linkedin</span>
-                </Link>
                 <Link href="https://www.instagram.com/" target="_blank">
                   <i className="fa-brands fa-instagram"></i>
                   <span>Instagram</span>
-                </Link>
-                <Link href="https://www.dribble.com/" target="_blank">
-                  <i className="fa-light fa-basketball"></i>
-                  <span>Dribble</span>
                 </Link>
               </div>
               <div className="footer__single-meta section__content-cta">
@@ -197,15 +185,7 @@ const FooterTwo = () => {
               <div className="footer__copyright-text text-center text-xl-start">
                 <p>
                   Copyright &copy;
-                  <span id="copyYear">{currentYear}</span> Xpovio by{" "}
-                  <Link
-                    href="https://themeforest.net/user/UltraDevs"
-                    target="_blank"
-                  >
-                    {" "}
-                    UltraDevs
-                  </Link>{" "}
-                  . All Rights Reserved
+                  <span id="copyYear">{currentYear}</span> ISBTechs. All rights reserved.
                 </p>
               </div>
             </div>
@@ -219,9 +199,6 @@ const FooterTwo = () => {
                 </li>
                 <li>
                   <Link href="our-services">Services</Link>
-                </li>
-                <li>
-                  <Link href="blog">Blog</Link>
                 </li>
                 <li>
                   <Link href="contact-us">Contact</Link>
