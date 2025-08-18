@@ -10,14 +10,13 @@ import AboutCta from "@/components/containers/home-two/AboutCta";
 
 const AboutUs = () => {
   return (
-    <Layout header={2} footer={5} video={0}>
+    <Layout header={2} footer={2} video={0}>
       <CmnBanner title="About Us" navigation="About Us" />
       <HomeTwoModal />
       <Agency />
-      <TeamMembers />
       <HomeTestimonial />
       <AboutSponsor />
-      <AboutCta />
+      
     </Layout>
   );
 };
