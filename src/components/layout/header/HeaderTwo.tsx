@@ -18,32 +18,17 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      if (scrollPosition > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(scrollPosition > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const defaultClasses = "primary-navbar cmn-nav";
-
-  const combinedClasses = `${
-    scrolled ? " navbar-active" : " "
-  } ${defaultClasses}`;
-
-  let logoSrc = logo;
+  const combinedClasses = `${scrolled ? "navbar-active" : ""} ${defaultClasses}`;
 
   const router = useRouter();
-  if (router.pathname === "/index-two-light") {
-    logoSrc = logoLight;
-  }
+  const logoSrc = router.pathname === "/index-two-light" ? logoLight : logo;
 
   return (
     <>
@@ -53,163 +38,51 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
             <div className="row">
               <div className="col-12">
                 <nav className="navbar p-0">
+                  {/* Logo */}
                   <div className="navbar__logo">
                     <Link href="/" aria-label="go to home">
-                      <Image src={logoSrc} priority alt="Image" />
+                      <Image src={logoSrc} priority alt="Logo" />
                     </Link>
                   </div>
+
+                  {/* Menu */}
                   <div className="navbar__menu">
                     <ul>
+                      <li className="navbar__item nav-fade">
+                        <Link href="/">Home</Link>
+                      </li>
+                      <li className="navbar__item nav-fade">
+                        <Link href="/about-us">About Us</Link>
+                      </li>
                       <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Home
-                        </button>
-                        <ul className="navbar__sub-menu navbar__sub-menu--lg">
-                          <li>
-                            <Link href="/">Creative Agency</Link>
-                          </li>
-                          <li>
-                            <Link href="index-light">
-                              Creative Agency Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-two">Digital Agency</Link>
-                          </li>
-                          <li>
-                            <Link href="index-two-light">
-                              Digital Agency Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-three">It Solution</Link>
-                          </li>
-                          <li>
-                            <Link href="index-three-light">
-                              It Solution Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-four">Personal Portfolio</Link>
-                          </li>
-                          <li>
-                            <Link href="index-four-light">
-                              Personal Portfolio Light
-                            </Link>
-                          </li>
-                          <li>
-                            <Link href="index-five">Interactive Portfolio</Link>
-                          </li>
-                          <li>
-                            <Link href="index-five-light">
-                              Interactive Portfolio Light
-                            </Link>
-                          </li>
+                        <Link href="/our-services" className="navbar__dropdown-label">
+                          Services
+                        </Link>
+                        <ul className="navbar__sub-menu">
+                          <li><Link href="/">Logo Design</Link></li>
+                          <li><Link href="/">Mobile Application</Link></li>
+                          <li><Link href="/">Ecommerce Solution</Link></li>
+                          <li><Link href="/">Website Development</Link></li>
+                          <li><Link href="/">Software Development</Link></li>
+                          <li><Link href="/">Animation</Link></li>
+                          <li><Link href="/">Digital Marketing</Link></li>
+                          <li><Link href="/">Business Branding</Link></li>
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="about-us">About Us</Link>
+                        <Link href="/">Packages</Link>
                       </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Services
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-services">Our Services</Link>
-                          </li>
-                          <li>
-                            <Link href="service-single">Service Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Projects
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="our-projects">Our Projects</Link>
-                          </li>
-                          <li>
-                            <Link href="project-single">Project Details</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Pages
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="faq">FAQ</Link>
-                          </li>
-                          <li>
-                            <Link href="404">Error</Link>
-                          </li>
-                          <li>
-                            <Link href="our-story">Our Story</Link>
-                          </li>
-                          <li>
-                            <Link href="portfolio">Portfolio</Link>
-                          </li>
-                          <li className="navbar__item navbar__item--has-children">
-                            <button
-                              aria-label="dropdown menu"
-                              className="navbar__dropdown-label navbar__dropdown-label-sub"
-                            >
-                              Team
-                            </button>
-                            <ul className="navbar__sub-menu navbar__sub-menu__nested">
-                              <li>
-                                <Link href="our-teams">Our Teams</Link>
-                              </li>
-                              <li>
-                                <Link href="team-single">Team Details</Link>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <Link href="client-feedback">Testimonials</Link>
-                          </li>
-                          <li>
-                            <Link href="contact-us">Contact Us</Link>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="navbar__item navbar__item--has-children nav-fade">
-                        <button
-                          aria-label="dropdown menu"
-                          className="navbar__dropdown-label"
-                        >
-                          Blog
-                        </button>
-                        <ul className="navbar__sub-menu">
-                          <li>
-                            <Link href="blog">Blog</Link>
-                          </li>
-                          <li>
-                            <Link href="blog-single">Blog Details</Link>
-                          </li>
-                        </ul>
+                      <li className="navbar__item nav-fade">
+                        <Link href="/contact-us">Contact Us</Link>
                       </li>
                     </ul>
                   </div>
+
+                  {/* Right Side Options */}
                   <div className="navbar__options">
                     <div className="navbar__mobile-options d-none d-sm-flex">
-                      <Link href="contact-us" className="btn btn--secondary">
+                      {/* "Let's Talk" button linked to Our Services */}
+                      <Link href="/our-services" className="btn btn--secondary">
                         Let&apos;s Talk
                       </Link>
                     </div>
