@@ -8,6 +8,7 @@ import HomeSponsor from "@/components/containers/home/HomeSponsor";
 import Portfolio from "@/components/containers/home/Portfolio"
 import Cta from "@/components/containers/home/Cta"
 import PricingSection from "@/components/containers/PricingSection";
+import CounterSection from "@/components/containers/CounterSection";
 
 const Home = () => {
   return (
@@ -15,12 +16,12 @@ const Home = () => {
       <HomeFourBanner />
       <Cta />
       <Agency />
+      <CounterSection />
       <HomeOffer />
       <Cta />
       <HomeTestimonial />
       <Portfolio />
       <HomeSponsor />
-      <PricingSection />
       {/* <NextPage /> */}
     </Layout>
   );

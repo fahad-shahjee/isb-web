@@ -54,6 +54,48 @@ const defaultPlans: Plan[] = [
     ],
     cta: { label: "Select Plan" },
   },
+  {
+    title: "Silver Logo Package",
+    price: 149.99,
+    features: [
+      "10 Custom Logo Design Concepts",
+      "4 Dedicated Designers",
+      "Unlimited Revisions",
+      "FREE Icon",
+      "FREE Custom Stationery Design (Letterhead, Envelope, Business Card)",
+      "FREE MS Word Letterhead",
+      "FREE Grayscale Formats",
+    ],
+    cta: { label: "Select Plan" },
+  },
+  {
+    title: "Silver Logo Package",
+    price: 149.99,
+    features: [
+      "10 Custom Logo Design Concepts",
+      "4 Dedicated Designers",
+      "Unlimited Revisions",
+      "FREE Icon",
+      "FREE Custom Stationery Design (Letterhead, Envelope, Business Card)",
+      "FREE MS Word Letterhead",
+      "FREE Grayscale Formats",
+    ],
+    cta: { label: "Select Plan" },
+  },
+  {
+    title: "Silver Logo Package",
+    price: 149.99,
+    features: [
+      "10 Custom Logo Design Concepts",
+      "4 Dedicated Designers",
+      "Unlimited Revisions",
+      "FREE Icon",
+      "FREE Custom Stationery Design (Letterhead, Envelope, Business Card)",
+      "FREE MS Word Letterhead",
+      "FREE Grayscale Formats",
+    ],
+    cta: { label: "Select Plan" },
+  },
 ];
 
 export default function PricingSection({ plans = defaultPlans }: { plans?: Plan[] }) {
