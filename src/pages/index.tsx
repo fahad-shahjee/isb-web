@@ -7,7 +7,6 @@ import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
 import HomeSponsor from "@/components/containers/home/HomeSponsor";
 import Portfolio from "@/components/containers/home/Portfolio"
 import Cta from "@/components/containers/home/Cta"
-import PricingSection from "@/components/containers/PricingSection";
 import CounterSection from "@/components/containers/CounterSection";
 
 const Home = () => {
