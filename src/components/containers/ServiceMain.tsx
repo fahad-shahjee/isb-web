@@ -50,15 +50,15 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Branding</Link>
+                          <Link href="service-single" style={{fontSize: "24px"}}>Logo Design</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Define Idea</li>
-                        <li>Competitor Reserach</li>
-                        <li>Target Audience</li>
-                        <li>Idea Validation</li>
-                        <li>Customer Value</li>
+                        <li>Unique & Custom Designs</li>
+                        <li>Creative & Professional</li>
+                        <li>Versatile & Scalable</li>
+                        <li>Revisions Until You're Happy</li>
+                        <li>Fast Delivery & Full Rights</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -78,15 +78,15 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">UX Design</Link>
+                          <Link href="service-single" style={{fontSize: "22px"}}>Website Development</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Estimation</li>
-                        <li>Research</li>
-                        <li>Story board</li>
-                        <li>User Flow</li>
-                        <li>Information Architecture</li>
+                        <li>Custom, interactive design</li>
+                        <li>Mobile-responsive sites</li>
+                        <li>Unlimited revisions</li>
+                        <li>SEO-ready structure</li>
+                        <li>Full ownership & guarantees</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -106,15 +106,15 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">UI Design</Link>
+                          <Link href="service-single" style={{fontSize: "24px"}}>Ecommerce solution</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Hi-Fidelity Wireframe</li>
-                        <li>Design System</li>
-                        <li>Final Presentation</li>
-                        <li>Final Delivery</li>
-                        <li>Post Delivery Support</li>
+                        <li>Easy setup</li>
+                        <li>Custom solutions</li>
+                        <li>Secure payments</li>
+                        <li>Responsive design</li>
+                        <li>Ongoing support</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -134,15 +134,15 @@ const ServiceMain = () => {
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Development</Link>
+                          <Link href="service-single" style={{fontSize: "24px"}}>Mobie Application</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Front End</li>
-                        <li>Backend</li>
-                        <li>Mobile App</li>
-                        <li>Post Delivery Support</li>
-                        <li>server development</li>
+                        <li>iOS & Android apps</li>
+                        <li>Cross-platform solutions</li>
+                        <li>Intuitive UI/UX</li>
+                        <li>Secure & fast</li>
+                        <li>Maintenance & support</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -158,19 +158,19 @@ const ServiceMain = () => {
                     <div className="service-t__slider-single">
                       <div className="intro">
                         <span className="sub-title">
-                          01
+                          05
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Branding</Link>
+                          <Link href="service-single" style={{fontSize: "21px"}}>Software Development</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Define Idea</li>
-                        <li>Competitor Reserach</li>
-                        <li>Target Audience</li>
-                        <li>Idea Validation</li>
-                        <li>Customer Value</li>
+                        <li>Custom solutions</li>
+                        <li>Agile builds</li>
+                        <li>Secure & scalable</li>
+                        <li>Boost productivity</li>
+                        <li>Stay competitive</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -186,19 +186,19 @@ const ServiceMain = () => {
                     <div className="service-t__slider-single">
                       <div className="intro">
                         <span className="sub-title">
-                          02
+                          06
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">UX Design</Link>
+                          <Link href="service-single" style={{fontSize: "25px"}}>Animation</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Estimation</li>
-                        <li>Research</li>
-                        <li>Story board</li>
-                        <li>User Flow</li>
-                        <li>Information Architecture</li>
+                        <li>Engaging visuals</li>
+                        <li>Explainer videos</li>
+                        <li>Creative design</li>
+                        <li>Storytelling</li>
+                        <li>Custom work</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -214,19 +214,19 @@ const ServiceMain = () => {
                     <div className="service-t__slider-single">
                       <div className="intro">
                         <span className="sub-title">
-                          03
+                          07
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">UI Design</Link>
+                          <Link href="service-single" style={{fontSize: "24px"}}>Branding</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Hi-Fidelity Wireframe</li>
-                        <li>Design System</li>
-                        <li>Final Presentation</li>
-                        <li>Final Delivery</li>
-                        <li>Post Delivery Support</li>
+                        <li>Standout identity</li>
+                        <li>Strategic branding</li>
+                        <li>Visual & messaging</li>
+                        <li>Consistent collateral</li>
+                        <li>Guidelines & support</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -242,19 +242,19 @@ const ServiceMain = () => {
                     <div className="service-t__slider-single">
                       <div className="intro">
                         <span className="sub-title">
-                          04
+                          08
                           <i className="fa-solid fa-arrow-right"></i>
                         </span>
                         <h4>
-                          <Link href="service-single">Development</Link>
+                          <Link href="service-single" style={{fontSize: "24px"}}>Digital Marketing</Link>
                         </h4>
                       </div>
                       <ul>
-                        <li>Front End</li>
-                        <li>Backend</li>
-                        <li>Mobile App</li>
-                        <li>Post Delivery Support</li>
-                        <li>server development</li>
+                        <li>SEO & content</li>
+                        <li>PPC & ads</li>
+                        <li>Social media</li>
+                        <li>Email marketing</li>
+                        <li>Analytics & CRO</li>
                       </ul>
                       <div className="cta">
                         <Link href="service-single">
@@ -265,6 +265,7 @@ const ServiceMain = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+                
               </Swiper>
             </div>
           </div>

@@ -43,9 +43,10 @@ const CmnBanner = ({ title, navigation, parent, parentLink }: BannerProps) => {
             <div className="col-12 col-lg-7 col-xl-5">
               <div className="text-center text-lg-start">
                 <p className="primary-text">
-                  We&apos;re an UK-based top-notch design agency committed to
-                  partnering with good companies and hiring the right people for
-                  the right roles.
+                  We’re a globally recognized tech agency dedicated to 
+                  delivering top-quality results by partnering with 
+                  forward-thinking companies and empowering the right 
+                  people in the right roles.
                 </p>
               </div>
             </div>
