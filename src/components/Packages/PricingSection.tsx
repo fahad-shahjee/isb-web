@@ -40,6 +40,7 @@ const defaultPlans: Plan[] = [
     cta: { label: "Select Plan" },
     highlight: true,
   },
+  // You can keep these duplicates if you want 6 cards; otherwise remove/rewrite:
   {
     title: "Silver Logo Package",
     price: 149.99,
@@ -169,12 +170,12 @@ export default function PricingSection({ plans = defaultPlans }: { plans?: Plan[
 
         .card__header { margin-bottom: 30px; }
         .card__title { font-size: clamp(18px, 2vw, 22px); font-weight: 700; margin: 0 0 20px; color: var(--text); }
-        .card__price { font-weight: 800; font-size: clamp(34px, 4.2vw, 48px); letter-spacing: 1px; margin: 0px 0px; padding-top: 20px; color: #fff; }
+        .card__price { font-weight: 800; font-size: clamp(34px, 4.2vw, 48px); letter-spacing: 1px; margin: 20px 0; /* ⬅ space top & bottom */ color: #fff; }
 
-        .card__features { margin: 20px 0; padding: 0; list-style: none; flex: 1 1 auto; overflow: auto; max-height: 200px; width: 100%; text-align: left;}
+        .card__features { margin: 20px 0; padding: 0; list-style: none; flex: 1 1 auto; overflow: auto; max-height: 200px; width: 100%; text-align: left; }
         .feature { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; color: var(--text); padding: 6px 0; justify-content: flex-start; }
         .bullet { line-height: 1.2; font-size: 22px; opacity: 0.9; color: #4cc0ff; }
-        .text { color: #fff; opacity: 1; text-align }
+        .text { color: #fff; opacity: 1; text-align: left; } /* ⬅ fixed */
 
         .card__features::-webkit-scrollbar { width: 8px; }
         .card__features::-webkit-scrollbar-track { background: transparent; }
@@ -182,7 +183,7 @@ export default function PricingSection({ plans = defaultPlans }: { plans?: Plan[
         .card__features { scrollbar-width: thin; scrollbar-color: #3b7db4 transparent; }
 
         .card__footer { margin-top: 30px; }
-        .btn { --p: #0ea5ea; --q: #2563eb; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; border-radius: 14px; padding: 14px 22px; min-width: 300px; background: linear-gradient(160deg, var(--p), var(--q)); color: white; box-shadow: 0 8px 18px rgba(14,165,234,0.35); transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; letter-spacing: 0.6px; text-transform: uppercase; font-size: 13px; }
+        .btn { --p: #0ea5ea; --q: #2563eb; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; font-weight: 700; border-radius: 14px; padding: 14px 22px; min-width: 300px; background: linear-gradient(160deg, var(--p), var(--q)); color: white; box-shadow: 0 8px 18px rgba(14,165,234,0.35); transition: transform .2s ease, box-shadow .2s ease, filter .2s ease; letter-spacing: 0.6px; text-transform: uppercase; font-size: 13px; text-align: center; }
         .btn:hover { transform: translateY(-1px); filter: brightness(1.05); box-shadow: 0 12px 22px rgba(14,165,234,0.45); }
         .btn:active { transform: translateY(0); }
       `}</style>
