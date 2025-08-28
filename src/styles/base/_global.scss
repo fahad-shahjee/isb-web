@@ -547,6 +547,100 @@ i {
   margin-bottom: 8px;
 }
 
+//modal css
+/* Overlay + container */
+.modal-overlay{
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+}
+.modal-root{
+  position: fixed; inset: 0;
+  display: grid; place-items: center;
+  z-index: 1001;
+  padding: 24px;
+}
+
+/* Card matching the dark navy look */
+.inquiry-card{
+  position: relative;
+  width: min(660px, 95vw);
+  background: #0f1a2b;          /* deep navy */
+  border: 1px solid #1e2b42;    /* subtle border */
+  box-shadow: 0 20px 60px rgba(0,0,0,.4);
+  padding: 28px;
+  border-radius: 6px;
+  color: #fff;
+}
+.inquiry-close{
+  position: absolute; right: 14px; top: 10px;
+  appearance: none; border: 0; background: transparent;
+  color: #cfd7e6; font-size: 28px; line-height: 1;
+  cursor: pointer;
+}
+.inquiry-title{
+  font-size: 22px; font-weight: 800; letter-spacing: .5px;
+  margin: 6px 0 0px;
+}
+
+.inquiry-form{ display: flex; flex-direction: column; gap: 14px; }
+
+.inquiry-input{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #24324d;
+  color: #e7eefc;
+  padding: 10px 18px;
+  border-radius: 0px;
+  outline: none;
+}
+.inquiry-input::placeholder{ color: #7f8bad; }
+
+.inquiry-checkboxes{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 0px 0 0px;
+}
+@media (min-width: 640px){
+  .inquiry-checkboxes{ grid-template-columns: 1fr 1fr; }
+}
+.inquiry-check{
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; letter-spacing: .6px;
+}
+.inquiry-check input{ accent-color: #ffda6a; }
+
+.inquiry-submit {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 16px 18px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;                      /* text always white */
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #2e7bbd, #0e2d49);
+
+  display: flex;                    /* make button flex container */
+  align-items: center;              /* center vertically */
+  justify-content: center;          /* center horizontally */
+  text-align: center;               /* fallback for multi-line */
+}
+
+.inquiry-submit:hover {
+  color: #fff;                      /* keep white on hover */
+  background: linear-gradient(90deg, #3e8cd5, #123a5d); /* optional hover */
+}
+
+.inquiry-submit:active {
+  transform: translateY(1px);
+}
+
+
 
 /* ==== 
    --------- (2.03) global styles end ---------
