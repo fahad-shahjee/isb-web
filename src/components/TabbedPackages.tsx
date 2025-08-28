@@ -76,7 +76,8 @@ export default function TabbedPackages() {
       plans: t.plans.map(p => ({
         ...p,
         cta: {
-          ...p.cta,
+          ...(p.cta ?? {}),
+          label: p.cta?.label ?? "", // Ensure label is always a string
           onClick: () => setOpenInquiry(true),
         },
       })),
