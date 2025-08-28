@@ -22,7 +22,6 @@ const Home = () => {
       <HomeTestimonial />
       <Portfolio />
       <HomeSponsor />
-      <TabbedPackages />
       {/* <NextPage /> */}
     </Layout>
   );
