@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import logo from "public/images/logo.png";
 import logoLight from "public/images/logo-light.png";
 import Offcanvas from "./Offcanvas";
+import ServiceInquiryModal from "@/components/ServiceInquiryModal";
 
 interface HeaderProps {
   openNav: boolean;
@@ -14,12 +15,10 @@ interface HeaderProps {
 
 const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
   const [scrolled, setScrolled] = useState(false);
+  const [openInquiry, setOpenInquiry] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setScrolled(scrollPosition > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -70,7 +69,7 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                         </ul>
                       </li>
                       <li className="navbar__item nav-fade">
-                        <Link href="/">Packages</Link>
+                        <Link href="/packages">Packages</Link>
                       </li>
                       <li className="navbar__item nav-fade">
                         <Link href="/contact-us">Contact Us</Link>
@@ -81,10 +80,16 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                   {/* Right Side Options */}
                   <div className="navbar__options">
                     <div className="navbar__mobile-options d-none d-sm-flex">
-                      {/* "Let's Talk" button linked to Our Services */}
-                      <Link href="/our-services" className="btn btn--secondary">
+                      {/* OPEN MODAL instead of link */}
+                      <button
+                        type="button"
+                        className="btn btn--secondary"
+                        onClick={() => setOpenInquiry(true)}
+                        aria-haspopup="dialog"
+                        aria-controls="service-inquiry-modal"
+                      >
                         Let&apos;s Talk
-                      </Link>
+                      </button>
                     </div>
                     <button
                       className="open-mobile-menu d-flex d-xl-none"
@@ -100,6 +105,13 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
           </div>
         </div>
       </header>
+
+      {/* Modal */}
+      <ServiceInquiryModal
+        open={openInquiry}
+        onClose={() => setOpenInquiry(false)}
+      />
+
       <Offcanvas openNav={openNav} setOpenNav={setOpenNav} />
     </>
   );
